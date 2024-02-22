@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+.title1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title2{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title3{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.list_title{
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: translateX(-21px);
+}
+.content{
+    font-size: 17px;
+    font-weight: normal;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.listcontent{
+    font-size: 17px;
+    font-weight: normal;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: translateX(-25px);    
+}
+.img{
+    border-radius: 40%;
+    width: 150px; /* 調整圖片的寬度 */
+    height: 150px; /* 調整圖片的高度 */
+    object-fit: cover; /*保持圖片比例，並裁剪超出的部分 */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:1250px){
+
+}
+@media(max-width:500px){
+    body {
+        max-width: 300px;
+    }
+    .title1{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .title2{
+        font-size: 11px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .title3{
+        font-size: 9px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .list_title{
+        font-size: 9px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        transform: translateX(-29px);
+    }
+    .content{
+        font-size: 8px;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .listcontent{
+        font-size: 8px;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        transform: translateX(-31px);    
+    }
+    .img{
+        width: 80px; /* 調整圖片的寬度 */
+        height: 80px; /* 調整圖片的高度 *//
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+}
