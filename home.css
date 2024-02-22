@@ -55,7 +55,7 @@ body {
     margin-bottom: 10px;
 }
 
-@media(max-width:1250px){
+@media(max-width:1024px){
     body {
         max-width: 490px;
     }
@@ -102,7 +102,7 @@ body {
         margin-bottom: 7px;
     }
 }
-@media(max-width:500px){
+@media(max-width:720px){
     body {
         max-width: 300px;
     }
