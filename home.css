@@ -56,7 +56,51 @@ body {
 }
 
 @media(max-width:1250px){
-
+    body {
+        max-width: 490px;
+    }
+    .title1{
+        font-size: 18px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .title2{
+        font-size: 17px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .title3{
+        font-size: 14px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .list_title{
+        font-size: 14px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        transform: translateX(-29px);
+    }
+    .content{
+        font-size: 13px;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .listcontent{
+        font-size: 12px;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        transform: translateX(-31px);    
+    }
+    .img{
+        width: 115px; /* 調整圖片的寬度 */
+        height: 115px; /* 調整圖片的高度 *//
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
 }
 @media(max-width:500px){
     body {
@@ -101,7 +145,7 @@ body {
     .img{
         width: 80px; /* 調整圖片的寬度 */
         height: 80px; /* 調整圖片的高度 *//
-        margin-top: 10px;
+        margin-top: 5px;
         margin-bottom: 5px;
     }
     
