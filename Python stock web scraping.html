@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Python stock web scraping</title>
+</head>
+<body>
+    <div class="title1">
+        Python小作品 Stock Web Scraping
+    </div>
+    <div class="title2">
+        說明:
+    </div>
+    <div class="content">
+        因為想要做一個可以爬取網路想要股票價格，並於設定價格到達時提醒賣出，於是利用在Udemy課程上學到的爬蟲技巧，製作了
+        一個股票爬蟲。此爬蟲主要分為三個檔案。
+        <br/><span style="font-weight: bold;">第一個檔案</span>為存放想要爬取股票的URL;
+        <br/><span style="font-weight: bold;">第二個檔案</span>為主要爬蟲運作程式，會到第一個檔案拿URL，並到網站爬取價格，如果直接執行這個檔案，會將爬取到的資料存成一份Excel;
+        <br/><span style="font-weight: bold;">第三個檔案</span>為到價通知，執行這個檔案時會執行檔案二並把結果拿進來做條件判斷，現在只會印出股票價格與是否建議賣出提示，目標之後可以串聯Linebot讓聊天機器人將爬取資訊自動傳入。
+        <div>
+            GitHub作品連結<a href="https://github.com/WilliamTsai1227/Stock_web_Scraping.git" target="_blank">https://github.com/WilliamTsai1227/Stock_web_Scraping.git</a>
+        </div>    
+    </div>
+    <div class="content">
+        1.Stock_url.py為存放要爬取股票的地方，目前是將股票網址存入變數，再放入一個list中，不過目前放入list這個動作需要手動加入，
+        之後想再優化讓上方放完股票網址進變數後，可以寫個方法讓程式自動把寫入的網址都放進統整list中。
+    </div>
+    <div>
+        <img class="img2" style=" width:50%;height:auto;" src="./stock_url.jpg"/>
+    </div>
+    <div class="content">
+        2.Scraping_Stock_All.py 為爬蟲程式主體，使用了requests,BeautifulSoup,pandas，最後可以將爬取的資料存入一個Excel檔案
+    </div>
+    <div>
+        <img class="img2" style=" width:50%;height:auto;" src="./Scraping_Stock_All.jpg"/>
+    </div>
+    <div class="content">
+        執行結果：
+    </div>
+    <div>
+        <img class="img2" style=" width:35%;height:auto;" src="./Scraping_Stock_All_result.png">
+    </div>
+    <div class="content">
+        3.Analysis.py 會去執行Scraping_Stock_All.py並將爬取到的資料判斷是否到達賣出價格，回傳股票價格與到價提醒。
+    </div>
+    <div>
+        <img class="img2" style=" width:50%;height:auto;" src="./Analyzsis.jpg"/>
+    </div>
+    <div class="content">
+        執行結果：
+    </div>
+    <div>
+        <img class="img2" style=" width:35%;height:auto;" src="./Analyzsis_result.png">
+    </div>
+    <div class="content">
+        思考:
+    </div>
+    <div class="content">
+        目前覺得Analysis.py判斷是否到價方式有點沒效率，因為讀進來的股票價格必須每一個都去核對股票名稱是否符合，若讀到的股票判斷式放在程式碼後端，
+        就會必須從頭讀到尾程式才會知道是否已經到價，覺得蠻沒有效率的，希望學習完演算法相關內容可以有方法改善。
+    </div>
+</body>
+</html>
