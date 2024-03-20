@@ -1,0 +1,207 @@
+body {
+    background-color: rgb(255, 247, 235);
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+.title1{
+    font-weight: bold;
+    font-size: 33px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title2{
+    font-weight: bold;
+    font-size: 27px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.title3{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.list_title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: translateX(-21px);
+}
+.content{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+.listcontent{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: translateX(-26px);    
+}
+.img{
+    border-radius: 40%;
+    width: 250px; /* 調整圖片的寬度 */
+    height: 250px; /* 調整圖片的高度 */
+    object-fit: cover; /*保持圖片比例，並裁剪超出的部分 */
+    object-position: top 1px right 0px;
+    /*object-position: top -4px right 0px;*/
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.img2{
+    width: 250px; /* 調整圖片的寬度 */
+    height: 250px; /* 調整圖片的高度 */
+    object-fit: cover; /*保持圖片比例，並裁剪超出的部分 */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.title2.active + .content{
+    display: block;
+}
+.arrow::before {
+    font-family: "Font Awesome 5 Free"; /* 指定字體 */
+    content: '\f0da'; /* 使用 Font Awesome 中的圖標代碼 */
+    font-size: 27px; /* 設定圖標大小 */
+    color: black; /* 設定圖標顏色 */
+}
+.title2.active .arrow::before {
+    font-family: "Font Awesome 5 Free"; /* 指定字體 */
+    content: '\f0d7'; /* 使用 Font Awesome 中的圖標代碼 */
+    font-size: 27px; /* 設定圖標大小 */
+    color: black; /* 設定圖標顏色 */
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(90deg);
+}
+
+@media(max-width:1024px){
+    body {
+        max-width: 700px;
+    }
+    .title1{
+        font-size: 25px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .title2{
+        font-size: 20px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .title3{
+        font-size: 17px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .list_title{
+        font-size: 16px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        transform: translateX(-29px);
+    }
+    .content{
+        font-size: 13px;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .listcontent{
+        font-size: 13px;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        transform: translateX(-31px);    
+    }
+    .img{
+        width: 115px; /* 調整圖片的寬度 */
+        height: 115px; /* 調整圖片的高度 */
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .img2{
+        width: 150px; /* 調整圖片的寬度 */
+        height: 150px; /* 調整圖片的高度 */
+        object-fit: cover; /*保持圖片比例，並裁剪超出的部分 */
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .arrow::before {
+        font-size: 20px; /* 設定圖標大小 */
+    }
+    .title2.active .arrow::before {
+        font-size: 20px; /* 設定圖標大小 */
+    }
+}
+@media(max-width:720px){
+    body {
+        max-width: 500px;
+    }
+    .title1{
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .title2{
+        font-size: 17px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .title3{
+        font-size: 17px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .list_title{
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        transform: translateX(-29px);
+    }
+    .content{
+        font-size: 13px;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .listcontent{
+        font-size: 13px;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        transform: translateX(-31px);    
+    }
+    .img{
+        width: 100px; /* 調整圖片的寬度 */
+        height: 100px; /* 調整圖片的高度 */
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .img2{
+        width: 100px; /* 調整圖片的寬度 */
+        height: 100px; /* 調整圖片的高度 */
+        object-fit: cover; /*保持圖片比例，並裁剪超出的部分 */
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .arrow::before {
+        font-size: 17px; /* 設定圖標大小 */
+    }
+    .title2.active .arrow::before {
+        font-size: 17px; /* 設定圖標大小 */
+    }
+    
+}
