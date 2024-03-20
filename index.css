@@ -126,7 +126,7 @@ body {
         font-size: 16px;
         margin-top: 7px;
         margin-bottom: 7px;
-        transform: translateX(-29px);
+        transform: translateX(-24px);
     }
     .content{
         font-size: 13px;
@@ -148,7 +148,7 @@ body {
         margin-right: 1px;
         margin-top: 7px;
         margin-bottom: 7px;
-        transform: translateX(-31px);    
+        transform: translateX(-26px);    
     }
     .img{
         width: 115px; /* 調整圖片的寬度 */
