@@ -126,7 +126,7 @@ body {
         font-size: 16px;
         margin-top: 7px;
         margin-bottom: 7px;
-        transform: translateX(-24px);
+        transform: translateX(-21px);
     }
     .content{
         font-size: 13px;
@@ -148,7 +148,7 @@ body {
         margin-right: 1px;
         margin-top: 7px;
         margin-bottom: 7px;
-        transform: translateX(-26px);    
+        transform: translateX(-23px);    
     }
     .img{
         width: 115px; /* 調整圖片的寬度 */
@@ -198,7 +198,7 @@ body {
         font-size: 16px;
         margin-top: 5px;
         margin-bottom: 5px;
-        transform: translateX(-24px);
+        transform: translateX(-21px);
     }
     .content{
         font-size: 13px;
@@ -220,7 +220,7 @@ body {
         margin-right: 1px;
         margin-top: 5px;
         margin-bottom: 5px;
-        transform: translateX(-26px);    
+        transform: translateX(-23px);    
     }
     .img{
         width: 100px; /* 調整圖片的寬度 */
