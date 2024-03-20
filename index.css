@@ -198,7 +198,7 @@ body {
         font-size: 16px;
         margin-top: 5px;
         margin-bottom: 5px;
-        transform: translateX(-29px);
+        transform: translateX(-24px);
     }
     .content{
         font-size: 13px;
@@ -220,7 +220,7 @@ body {
         margin-right: 1px;
         margin-top: 5px;
         margin-bottom: 5px;
-        transform: translateX(-31px);    
+        transform: translateX(-26px);    
     }
     .img{
         width: 100px; /* 調整圖片的寬度 */
